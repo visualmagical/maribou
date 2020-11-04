@@ -100,25 +100,25 @@ function animate() {
 
     // play with colours
     if (!audioElement.paused) {
-      if (audioElement.currentTime < 150) {
+      // if (audioElement.currentTime < 150) {
         child.material.color = new THREE.Color(`hsl(${fData[i] * 1.5}, 50%, 50%)`);
-      }
-      if (audioElement.currentTime >= 150 && audioElement.currentTime < 210.09) {
-        let clearCol = renderer.getClearColor();
-        renderer.setClearColor(new THREE.Color(clearCol.r + 0.00002, clearCol.g + 0.00002, clearCol.b + 0.00002));
-      }
-      if (audioElement.currentTime >= 158.1 && audioElement.currentTime < 210.09) {
-        child.material.color = new THREE.Color('hsl(0, 50%, 50%)');
-        // child.material.color = new THREE.Color(`hsl(0, 0%, 70%)`);
-        renderer.setClearColor(new THREE.Color(0xffffff));
-      }
-      if (audioElement.currentTime >= 210.09) {
-        renderer.setClearColor(new THREE.Color(0x000000));
-        child.material.color = new THREE.Color(`hsl(${fData[i] * 1.5}, 50%, 50%)`);
-      }
-      if (audioElement.currentTime >= 211) {
-        child.material.color = new THREE.Color(`hsl(${fData[i] * 1.5}, 50%, 50%)`);
-      }
+      // }
+      // if (audioElement.currentTime >= 150 && audioElement.currentTime < 210.09) {
+      //   let clearCol = renderer.getClearColor();
+      //   renderer.setClearColor(new THREE.Color(clearCol.r + 0.00002, clearCol.g + 0.00002, clearCol.b + 0.00002));
+      // }
+      // if (audioElement.currentTime >= 158.1 && audioElement.currentTime < 210.09) {
+      //   child.material.color = new THREE.Color('hsl(0, 50%, 50%)');
+      //   // child.material.color = new THREE.Color(`hsl(0, 0%, 70%)`);
+      //   renderer.setClearColor(new THREE.Color(0xffffff));
+      // }
+      // if (audioElement.currentTime >= 210.09) {
+      //   renderer.setClearColor(new THREE.Color(0x000000));
+      //   child.material.color = new THREE.Color(`hsl(${fData[i] * 1.5}, 50%, 50%)`);
+      // }
+      // if (audioElement.currentTime >= 211) {
+      //   child.material.color = new THREE.Color(`hsl(${fData[i] * 1.5}, 50%, 50%)`);
+      // }
     }
   }
   requestAnimationFrame(animate);
