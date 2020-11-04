@@ -2,7 +2,7 @@
 const amount = 200, fData = new Uint8Array(amount);
 let analyser, audioSrc, audioElement = new Audio();
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-audioElement.src = '../media/maribou.mp3';
+audioElement.src = './media/maribou.mp3';
 audioSrc = audioCtx.createMediaElementSource(audioElement);
 analyser = audioCtx.createAnalyser();
 audioSrc.connect(analyser);

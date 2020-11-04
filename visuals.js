@@ -55,7 +55,7 @@ function init() {
 // create each atom
 function addAtom() {
   const atomSize = 1;
-  const texture = new THREE.TextureLoader().load("../img/sand1.jpg");
+  const texture = new THREE.TextureLoader().load("./img/sand1.jpg");
   const atomGeometry = new THREE.SphereGeometry(atomSize, 32, 32);
   const atomMaterial = new THREE.MeshLambertMaterial({color: Math.random() * 0xffffff, map: texture});
   const atom = new THREE.Mesh(atomGeometry, atomMaterial);
