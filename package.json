@@ -1,0 +1,26 @@
+{
+  "name": "maribou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/visualmagical/maribou.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/visualmagical/maribou/issues"
+  },
+  "homepage": "https://github.com/visualmagical/maribou#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
